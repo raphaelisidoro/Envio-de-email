@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="style.css">
+        <title>Quem sou eu</title>
+    </head>
+<body>
+    <header>
+       <h1>Quem sou eu</h1>
+       <p>Uma página simples para me apresentar pro mundo!</p>
+
+    </header>
+   <nav>
+    <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#interesses">Interesses</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#redes">Redes Sociais</a></li>
+    </ul>
+    </nav>
+    <main>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <img src="https://th.bing.com/th/id/ODL.5c5deeb8f8002a424655c9cec6a77c99?w=310&h=198&c=7&rs=1&bgcl=ffff14&r=0&o=6&cb=12&pid=AlgoBlockDebug" 
+                 alt="Capivara deitada"
+                 width="250">
+                 
+            <p>
+                Olá! Eu sou <strong>Raphael</strong> e adoro aprender sobre tecnologia. 
+                <br/> Acredito que programar é uma forma de contar histórias e resolver problemas do mundo real. 
+                <br/> Nesta página, você vai conhecer um pouco mais sobre mim. 
+            </p>
+        </section>
+        <section id="interesses">
+            <h2>Interesses</h2>
+            <p>Algumas coisas que me fazem brilhar os olhos:</p>
+            <ul>
+                <li>Pastel com caldo de cana</li>
+                <li>Gol de fora da área no ângulo</li>
+                <li>Cochilo da tarde</li>
+                <li>Cachorro salsicha</li>
+                <li>Minha namorada gostosa</li>
+            </ul>
+        </section>
+        <section id="objetivos">
+            <h2>Objetivos</h2>
+            <p>Metas para os próximos meses</p>
+            <ol>
+                <li>Sobreviver até o natal</li>
+            </ol>
+        </section>
+        <section id="contatos">
+            <h2>Contatos</h2>
+            <p>Preencha o formulário para entrar em contato:</p>
+            <form id="form" onsubmit="enviarFormulario(event);">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome">
+                <label  for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+                <label for="mensagem">Mensagem: </label>
+                <textarea
+                    name="mensagem"
+                    id="mensagem"
+                    rows="4"
+                    cols="30"
+                    required
+                ></textarea>
+                <p id="resposta"></p>
+                <button type="submit">Enviar mensagem</button>
+
+            </form>
+        </section>
+
+        <section id="habilidades">
+            <table border="1">
+                <caption>Minhas Habilidades</caption>
+                
+                <thead>
+                    <tr>
+                        <th>Linguagem</th>
+                        <th>Principais conteúdos</th>
+                        <th>Nível de dificuldade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>
+                            Estrutura de páginas, tags, links, listas, formulários e tabelas
+                        </td>
+                        <td>Fácil 🌟</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>
+                            Cores, fontes, layouts, responsividade e animações simples
+                        </td>
+                        <td>Médio 🌟🌟</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScipt</td>
+                        <td>
+                            Variáveis, funções, eventos, condicionais e manipulação do DOM
+                        </td>
+                        <td>Difícil 🌟🌟🌟</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>Variáveis, estruturas de controle e funções</td>
+                        <td>Difícil 🌟🌟🌟</td>
+                    
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="redes">
+            <h2>Redes Sociais</h2>
+            <p>
+                Instagram: <a href="https://www.instagram.com/">@raphaelisidoro</a>
+            </p>
+            <p>
+                Linkedin: <a href="https://www.linkedin.com/">raphael-isidoro-56b4041a2/</a>
+            </p>
+            <p>
+                Github: <a href="https://github.com">@raphaelisidoro</a>
+            </p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Site desenvolvido pela turma de IoT01</p>
+    </footer>
+</body>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="env.js"></script>
+<script src="script.js"></script>
+</html>

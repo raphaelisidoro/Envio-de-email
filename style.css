@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color:rgb(6, 6, 49);
+    color:whitesmoke;
+    line-height:1.6;
+}
+
+::selection{
+    background-color:rgb(163, 155, 230);
+    color:black;
+}
+
+h1 {
+    margin-bottom: 10px;
+    line-height: 1.25;
+    font-size: 2.4rem;
+    color:#fbfcfc;
+    text-shadow: 0 0 10px #0a0a0a;
+}
+
+h2 {
+    margin-bottom: 10px;
+    line-height: 1.25;
+    font-size: 1.8rem;
+    color:aliceblue;
+}
+
+p{
+    margin-bottom: 14px;
+    color: #c0cad8;
+}
+
+a{
+    color:azure;
+    text-decoration:none;
+    transition: color 0.2s;
+}
+
+a:hover{
+    color: #38bdf8;
+}
+
+header{
+    background: linear-gradient(90deg, #111827 0%, #1e1b4b 100%);
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    background-color: #0f172a;
+    border-top: 1px solid #1e293b;
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav a{
+    color:#e2e8f0;
+    padding: 6px 14px;
+    border-radius: 50px;
+}
+
+nav a:hover{
+    background-color:#525aa0;
+    color: #0a0a0a;
+}
+
+main{
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+main > section{
+    background-color: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    box-shadow: 0 0 20px (rgba(0, 229, 255, 0.08));
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+button{
+    background: linear-gradient(90deg, #8b5cf6, #00e5ff);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.3);
+    width: 50%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    margin-bottom: 14px;
+}
+
+form{
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    /* deixar o label em negrito */
+    font-weight: bold;
+    margin-bottom: #00e5ff;
+}
+input, textarea {
+    width: 50%;
+    padding: 10px, 12px;
+    border: 1.5px solid #1e293b;
+    border-radius: 10px;
+    color:#0a0a0a;
+}
+input:focus, textarea:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 10px rgba(1, 225, 250, 0.4);
+    outline: none;
+}
+
+#resposta{
+    color: #8761f7;
+    text-shadow: 0 0 10px #8761f7;
+}
